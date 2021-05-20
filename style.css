@@ -1,0 +1,155 @@
+/* https://developer.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/ */
+.offscreen {
+  clip-path: inset(100%);
+  clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; /* added line */
+  width: 1px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url('./fonts/Oswald/Oswald-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url('./fonts/Oswald/Oswald-ExtraLight.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url('./fonts/Oswald/Oswald-Light.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url('./fonts/Oswald/Oswald-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato/Lato-Light.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato/Lato-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+body {
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: lightgrey;
+}
+
+.swiper-container {
+  position: relative;
+  display: flex;
+  height: 30rem;
+}
+
+.banner-image {
+  width: 100%;
+  filter: brightness(50%);
+}
+
+.menu-container {
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  display: flex;
+  width: 100%;
+  z-index: 2;
+}
+
+.top-menu {
+  display: flex;
+  padding: 1rem 2rem;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.account {
+  position: absolute;
+  right: 2.5rem;
+}
+
+.account a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.menu-checkbox,
+.toogle-label {
+  display: none;
+  position: absolute;
+  top: 0.5 rem;
+  right: 0.5 rem;
+}
+
+.bottom-menu {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 0 2rem;
+  margin-right: 2rem;
+}
+
+.logo img {
+  height: 3rem;
+}
+
+.main-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.search-icon {
+  position: absolute;
+  top: 4.5rem;
+  right: 2.5rem;
+}
+
+.search-icon a {
+  color: white;
+}
+
+.account a:hover,
+.menu-item a:hover {
+  background-color: yellowgreen;
+}
