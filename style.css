@@ -105,7 +105,6 @@ body {
   color: white;
   text-decoration: none;
   padding: 1rem;
-  margin-right: 2rem;
 }
 
 .menu-checkbox,
@@ -236,7 +235,7 @@ body {
   text-align: center;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 650px) {
   .main-container,
   .box-container {
     flex-wrap: wrap;
@@ -250,14 +249,20 @@ body {
     display: none;
     position: absolute;
     z-index: 3;
-    width: 20vw;
-    right: 1rem;
+    width: 100%;
+    left: 0;
+    margin: 0;
   }
 
   .toogle-label {
     display: block;
     cursor: pointer;
     font-size: 1.5rem;
+  }
+
+  .banner-image {
+    width: auto;
+    max-height: 25rem;
   }
 
   .menu-checkbox:checked ~ .main-menu {
@@ -271,6 +276,8 @@ body {
 
   .main-menu ul {
     display: flex;
+    margin: 0;
+    padding: 0;
     flex-direction: column;
     background-color: mediumaquamarine;
   }
@@ -285,10 +292,6 @@ body {
   .banner {
     top: 6rem;
     width: 50%;
-  }
-
-  .banner h1 {
-    font-size: 8px;
   }
 
   .shop-now-button {
