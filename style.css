@@ -161,6 +161,7 @@ body {
   flex-direction: column;
   width: 16rem;
   top: 15rem;
+  left: 50%;
   transform: translateX(-50%);
 }
 
@@ -235,12 +236,23 @@ body {
   text-align: center;
 }
 
-@media (max-width: 650px) {
-  .main-container,
+@media (max-width: 900px) {
+  .menu-container,
   .box-container {
     flex-wrap: wrap;
   }
 
+  .main-menu a {
+    padding: 0.5rem;
+  }
+
+  .banner {
+    top: 12rem;
+    width: 50%;
+  }
+}
+
+@media (max-width: 650px) {
   .swiper-container {
     height: 20rem;
   }
