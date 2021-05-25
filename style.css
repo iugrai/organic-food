@@ -195,12 +195,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: nowrap;
 }
 
 .box-container {
   display: flex;
-  width: 60%;
+  width: 75%;
   align-items: center;
 }
 
@@ -237,11 +236,6 @@ body {
 }
 
 @media (max-width: 900px) {
-  .menu-container,
-  .box-container {
-    flex-wrap: wrap;
-  }
-
   .main-menu a {
     padding: 0.5rem;
   }
@@ -249,6 +243,12 @@ body {
   .banner {
     top: 12rem;
     width: 50%;
+  }
+
+  .box-container {
+    flex-wrap: wrap;
+    width: 50vw;
+    margin: 10 px auto;
   }
 }
 
