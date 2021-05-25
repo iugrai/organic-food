@@ -248,7 +248,6 @@ body {
   .box-container {
     flex-wrap: wrap;
     width: 50vw;
-    margin: 10 px auto;
   }
 }
 
