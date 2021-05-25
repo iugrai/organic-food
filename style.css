@@ -145,7 +145,7 @@ body {
 .swiper-container {
   position: relative;
   display: flex;
-  height: 40rem;
+  height: 25rem;
   overflow: hidden;
 }
 
@@ -160,7 +160,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 16rem;
-  top: 15rem;
+  top: 10rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -187,7 +187,7 @@ body {
   margin: 0 auto;
   text-align: center;
   background-color: green;
-  width: 10rem;
+  width: 6rem;
   border-radius: 200px;
 }
 
@@ -241,7 +241,6 @@ body {
   }
 
   .banner {
-    top: 12rem;
     width: 50%;
   }
 
