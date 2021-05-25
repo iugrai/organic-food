@@ -66,18 +66,6 @@ body {
   background-color: lightgrey;
 }
 
-.swiper-container {
-  position: relative;
-  display: flex;
-  height: 40rem;
-  overflow: hidden;
-}
-
-.banner-image {
-  width: 100%;
-  filter: brightness(50%);
-}
-
 .menu-container {
   position: absolute;
   flex-direction: column;
@@ -152,6 +140,18 @@ body {
 .account a:hover,
 .menu-item a:hover {
   background-color: yellowgreen;
+}
+
+.swiper-container {
+  position: relative;
+  display: flex;
+  height: 40rem;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  filter: brightness(50%);
 }
 
 .banner {
